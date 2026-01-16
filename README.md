@@ -1,4 +1,4 @@
-# NanoStat Firmware – ESP32-WROOM-32E
+# NanoStat Firmware – ESP32 WROOM 32E
 
 ## Background
 This project is based on the paper:
