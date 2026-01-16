@@ -36,7 +36,7 @@ No physical hardware testing has been performed at this stage.
 ## Current Project Status
 - Hardware is not yet available
 - Focus is on firmware structure and web interface
-- Sensor integration and hardware validation will be done in a later phase
+- Hardware integration and validation will be done in a later phase
 
 ## Build Environment
 - PlatformIO
