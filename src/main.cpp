@@ -44,7 +44,7 @@ float a_coeff = -146.63; // hard code coeffs but they can be updated with calibr
 float b_coeff = 7.64; // hard code coeffs but they can be updated with calibration routine 
 
 // Indicators 
-const uint8_t PIN_LED = 26; // DAC2 (LED "blinky")
+int LEDPIN = 26; // DAC2 (LED "blinky")
 
 // Global mode control (sweep type)
 enum Sweep_Mode_Type
@@ -4068,7 +4068,7 @@ void setup()
   pinMode(LEDPIN, OUTPUT);
 
   // Start serial interface:
-  Wire.begin(PIN_12C_SDA, PIN_12C_SCL);
+  Wire.begin(PIN_I2C_SDA, PIN_I2C_SCL);
   Serial.begin(115200);
   while (!Serial)
     ;
