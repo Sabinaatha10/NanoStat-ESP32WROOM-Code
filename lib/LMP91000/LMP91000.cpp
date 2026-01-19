@@ -126,10 +126,7 @@ uint8_t LMP91000::read(uint8_t reg) const
     Wire.write(reg);
     Wire.endTransmission(false);
     
-    Wire.requestFrom(
-    static_cast<uint8_t>(LMP91000_I2C_ADDRESS),
-    static_cast<uint8_t>(1)
-    );
+    Wire.requestFrom((uint8_t)LMP91000_I2C_ADDRESS, (uint8_t)1);
 
     while(Wire.available()){
         data = Wire.read();
